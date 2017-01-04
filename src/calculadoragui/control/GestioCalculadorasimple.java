@@ -7,8 +7,8 @@ import java.awt.event.ActionListener;
 
 public class GestioCalculadorasimple implements ActionListener {
 
-    private CalculadoraSimple ig;
-    private Operacions opers;
+    private final CalculadoraSimple ig;
+    private final Operacions opers;
 
     public GestioCalculadorasimple(CalculadoraSimple ig) {
         this.ig = ig;
