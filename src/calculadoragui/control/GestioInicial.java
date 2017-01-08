@@ -47,7 +47,7 @@ public class GestioInicial implements ActionListener {
 
     /**
      * Aquest mètode serveix per executar el tipus de calculadora que s'ha escollit
-     * i fer invisible la inicial per a que no estorbi
+     * i tanca la inicial per a que no estorbi
      * @param i 
      */
     private void canvi(int i) {
@@ -56,9 +56,10 @@ public class GestioInicial implements ActionListener {
             @Override
             public void run() {
 
-                InterficieInicial intInici = new InterficieInicial();
-                intInici.setVisible(false);
+//                InterficieInicial intInici = new InterficieInicial();
+//                intInici.dispose();
 
+               
                 if (i == 0) {
                     CalculadoraSimple intGraf = new CalculadoraSimple();
                     intGraf.setVisible(true);
